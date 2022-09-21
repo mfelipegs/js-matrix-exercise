@@ -1,2 +1,2 @@
 # js-matrix-exercises
-Matrix exercises for the Web Development-ll classes
+Matrix exercise for Web Development-ll classes
