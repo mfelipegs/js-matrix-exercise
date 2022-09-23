@@ -39,7 +39,6 @@ for(i = 0; i < 10; i++) {
         div1 = document.getElementById('div_matrix');
         div1.textContent = document.write("<td>" + matrix[i][j] + "</td>");
         //div1.style.color = "black";
-        document.write(" ");
     }
 
     document.write("</tr>");
