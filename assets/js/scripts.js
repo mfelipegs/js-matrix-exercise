@@ -1,14 +1,11 @@
 function showMatrix() {
-//criando o array
+//creating the array
 matrix = new Array;
 
-const characters = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase();
+/*const characters = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase();
 const randomCharacter = characters[Math.floor(Math.random() * characters.length)];
-console.log(randomCharacter);
+console.log(randomCharacter);*/
 
-/*for(n = 0; n < 10; i++) {
-
-}*/
 const r1 = ["A", "B", "a", "G", "J", "N", "I", "B", "P", "W", "D", "B", "A", "b", "A", "S", "G", "E", "K", "Y"];
 
 const r2 = ["Z", "J", "u", "N", "E", "A", "V", "A", "I", "S", "Z", "S", "A", "M", "u", "D", "K", "F", "Q", "Z"];
@@ -29,10 +26,7 @@ const r9 = ["n", "B", "A", "p", "o", "r", "s", "c", "h", "e", "R", "B", "R", "M"
 
 const r10 = ["L", "Z", "G", "G", "V", "L", "k", "o", "e", "n", "i", "g", "s", "e", "g", "g", "X", "V", "H", "Q"];
 
-//Criando a matriz 3x3
 matrix = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10]; 
-
-//3 elementos, é 0 1 2, por isso < 3
 
 //i = row
 //j = column
