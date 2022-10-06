@@ -31,3 +31,14 @@ body {
     font-weight: 700;
 }
 
+@media(max-width: 1366px) {
+    .tb1 {
+        font-size: 1.0em;
+        width: 60%;
+    }
+  }
+
+
+.teste {
+    background: linear-gradient(to left, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent;-webkit-background-clip: text;
+}
