@@ -1,6 +1,6 @@
 function showMatrix() {
 
-    matrix = new Array;
+    matrix = [];
     //creating the 2D array
     matrix = [
     ["A", "B", "a", "G", "J", "N", "I", "B", "P", "W", "D", "B", "A", "b", "A", "S", "G", "E", "K", "Y"],
@@ -23,21 +23,23 @@ function showMatrix() {
 
     ["L", "Z", "G", "G", "V", "L", "k", "o", "e", "n", "i", "g", "s", "e", "g", "g", "X", "V", "H", "Q"]];
 
-    //let colored_char = 'color: red;';
+    matrix_bank = ["Audi", "BMW", "Bugatti", "Koenigsegg", "Lamborghini", "Lotus", "Mclaren", "Pagani", "Porsche", "Saleen"];
+    
+    p1 = document.getElementById('words');
+    p1.textContent = matrix_bank.join(" - ");
 
     //i = row
     //j = column
-    document.write("<table border=0 class='tb1'>")
+    document.write("<table border=0 class='tb1'>");
     for(i = 0; i < 10; i++) {
         document.write("<tr>");
         for(j = 0; j < 20; j++) {
-            div1 = document.getElementById('div_matrix');
             if(matrix[i][j] === matrix[i][j].toLowerCase()) {
-                div1.textContent = 
-                document.write("<td style='background-color: #FBDA61; background-image: linear-gradient(225deg, #FBDA61 0%, #FF5ACD 0%); -webkit-text-fill-color: transparent; -webkit-background-clip: text;'>" + matrix[i][j].toUpperCase() + "</td>");
+                document.write("<td style='background-color: #FF3CAC; background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text;'>" 
+                + matrix[i][j].toUpperCase() + "</td>");
             }
             else {
-                div1.textContent = document.write(`<td>${matrix[i][j]}</td>`);
+                document.write(`<td>${matrix[i][j]}</td>`);
             }
         }
         document.write("</tr>");

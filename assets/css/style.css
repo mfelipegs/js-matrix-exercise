@@ -16,10 +16,6 @@ body {
     background-attachment: fixed;
     background-color: #FBDA61;
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10%;
 }
 
 .tb1 {
@@ -34,11 +30,20 @@ body {
 @media(max-width: 1366px) {
     .tb1 {
         font-size: 1.0em;
-        width: 60%;
     }
   }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.teste {
-    background: linear-gradient(to left, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent;-webkit-background-clip: text;
+#words {
+    font-size: 4.0vh;
+    margin-bottom: 2.0vh;
+    margin-top: 3.5vh;
+    text-decoration: line-through;
+    text-decoration-color: #784BA0;
 }
